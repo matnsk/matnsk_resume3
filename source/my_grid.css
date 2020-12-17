@@ -1,1 +1,78 @@
 
+/*-----------------------------GRID CSS ----------------------------------------*/
+
+
+
+/*----------------------------*/
+/*---------Sections--------*/
+/*----------------------------*/
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*----------------------------*/
+/*---------Rows--------*/
+/*----------------------------*/
+
+.row {
+    zoom: 1; 
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display:table;
+}
+.row:after {
+    clear:both;
+}
+
+/*----------------------------*/
+/*---------Columns--------*/
+/*----------------------------*/
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } 
+
+
+@media only screen and (max-width: 480px) {
+	.col { 
+	
+        margin: 0;
+	}
+}
+
+
+/*----------------------------*/
+/*---------TWO PARTS--------*/
+/*----------------------------*/
+
+
+.part-2-of-2 {
+	width: 100%;
+}
+
+.part-1-of-2 {
+	width: 49.2%;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.part-2-of-2 {
+		width: 100%; 
+	}
+	.part-1-of-2 {
+		width: 100%; 
+	}
+}
+
+
